@@ -1,6 +1,6 @@
 import 'dart:math';
 class BmiBrain{
-  int height;
+  double height;
   int weight;
   BmiBrain({required this.height,required this.weight});
 

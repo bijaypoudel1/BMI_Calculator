@@ -10,7 +10,6 @@ const activeColor = Colors.pink;
 const inactiveColor = Color(0xFF111328);
 
 enum GenderType { male, female }
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -19,9 +18,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   GenderType? gender;
   double sliderValue = 150;
-  int height = 180;
   int age = 20;
   int weight = 50;
 
@@ -241,8 +240,8 @@ class _HomePageState extends State<HomePage> {
 // SizedBox(height:60),
           BottomButton(text: 'Calculate',
               onTap: (){
-          BmiBrain obj = BmiBrain(height: height,weight: weight);
-            Navigator.push(context, MaterialPageRoute(
+          BmiBrain obj = BmiBrain(height: sliderValue,weight: weight);
+          Navigator.push(context, MaterialPageRoute(
             builder:(context)=>SecondPage(
             bmi: obj.bmi(),
               message: obj.message(),

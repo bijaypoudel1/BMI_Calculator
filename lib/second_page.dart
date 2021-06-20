@@ -68,9 +68,8 @@ class SecondPage extends StatelessWidget {
               height: 20,
             ),
             BottomButton(text: 'Re-Calculate', onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage(),
-              ),
-              );
+            Navigator.pop(context);
+
             })
           ]),
         ));
